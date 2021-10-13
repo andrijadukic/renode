@@ -50,8 +50,6 @@ void Dbbif::timeoutTick(uint8_t *signal, uint8_t value, int timeout) {
 void Dbbif::write(uint64_t addr, uint64_t value) {
     *awvalid = 1;
     *awlen = 0; // TODO: Variable write length
-    *awsize = 2; // TODO: Variable write width
-    *awburst = static_cast<uint8_t>(DbbifBurstType::INCR);
     *awaddr = addr;
 
     this->agent->log(0, "Dbbif write - AW");
