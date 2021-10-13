@@ -5,6 +5,7 @@ bin
 *.pyc
 *.swp
 .vscode
+.idea
 .vs
 *.userprefs
 

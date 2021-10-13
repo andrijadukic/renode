@@ -7,7 +7,7 @@
 #ifndef DbbifSlave_H
 #define DbbifSlave_H
 
-#include "dbbif-slave.h"
+#include "dbbif.h"
 #include <cmath>
 #include <cinttypes>
 
