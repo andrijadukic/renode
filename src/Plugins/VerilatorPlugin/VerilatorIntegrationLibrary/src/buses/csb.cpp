@@ -5,9 +5,9 @@ void CSB::tick(bool countEnable, uint64_t steps = 1)
     for(uint32_t i = 0; i < steps; ++i)
     {
         *csb_clock = 1;
-        eval();
+        evaluateModel();
         *csb_clock = 0;
-        eval();
+        evaluateModel();
 
     }
 

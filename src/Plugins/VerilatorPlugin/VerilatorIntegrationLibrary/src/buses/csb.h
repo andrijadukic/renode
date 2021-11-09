@@ -6,7 +6,6 @@
 struct CSB : public BaseBus
 {
     virtual void tick(bool countEnable, uint64_t steps);
-    virtual void tick(bool countEnable, uint64_t steps);
     virtual void write(uint64_t addr, uint64_t value);
     virtual uint64_t read(uint64_t addr);
     virtual void reset();
