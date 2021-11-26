@@ -50,7 +50,7 @@ void CSB::write(uint64_t addr, uint64_t value)
 uint64_t CSB::read(uint64_t addr)
 {
     *csb_valid = 1;
-    *csb_addr = addr;
+    *csb_addr = addr >> 2;
     *csb_write = 0;
 
     timeoutTick(csb_ready, 1);
